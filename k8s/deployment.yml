@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app
+  name: node-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: test-app
+      app: node-app
   template:
     metadata:
       labels:
-        app: test-app
+        app: node-app
     spec:
       containers:
-      - name: test-app
+      - name: node-app
         image: hirshant/mp
         ports:
         - containerPort: 3000
