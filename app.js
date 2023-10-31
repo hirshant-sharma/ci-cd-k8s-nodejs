@@ -7,7 +7,7 @@ const port = 3000;
 const host = '0.0.0.0';
 
 app.get('/', (req, res) => {
-  res.send('Hello Ragnarok Your K8S Pipline is Working....');
+  res.send('Hello Ragnarok Your K8S Pipline is Working..');
 })
 
 app.listen(port, host);
